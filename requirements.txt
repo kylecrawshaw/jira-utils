@@ -1,0 +1,6 @@
+requests
+jira
+jwt
+oauthlib==0.7.2
+ipython
+robobrowser
