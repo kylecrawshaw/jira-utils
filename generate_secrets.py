@@ -36,5 +36,8 @@ def main():
     except TokenRequestDenied:
         raise SystemExit('Oauth request denied.')
     save_secrets(oauth_secrets, args.out)
+
+
 if __name__ == '__main__':
     main()
+

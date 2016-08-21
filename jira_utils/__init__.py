@@ -19,3 +19,4 @@ def save_secrets(data, path):
 def jira_oauth_session(server, secrets_path):
     secrets = load_secrets(secrets_path)
     return JIRA(server, oauth=secrets)
+

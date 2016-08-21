@@ -111,3 +111,4 @@ def jira_oauth_flow(server, consumer_key, key_cert, auto=False, username=None, p
     }
 
     return oauth_secrets
+
