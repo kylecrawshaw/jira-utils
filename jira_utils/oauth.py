@@ -21,7 +21,7 @@ def save_secrets(data, path):
     Saves oauth secrets to json at specified path.
     """
     with open(path, 'w') as f:
-        f.write(json.dumps(data))
+        f.write(json.dumps(data, indent=4))
 
 
 def _auto_auth_flow(token_auth_url, username=None, password=None):
