@@ -1,27 +1,10 @@
-#!/usr/bin/env python
 import os
-import json
 import random
 import string
 import webbrowser
 
 from oauthlib.oauth1 import SIGNATURE_RSA
 from requests_oauthlib import OAuth1Session
-
-def load_secrets(path):
-    """
-    Loads JSON file containing oauth secrets.
-    """
-    with open(path, 'r') as f:
-        return json.loads(f.read())
-
-
-def save_secrets(data, path):
-    """
-    Saves oauth secrets to json at specified path.
-    """
-    with open(path, 'w') as f:
-        f.write(json.dumps(data, indent=4))
 
 
 def _auto_auth_flow(token_auth_url, username=None, password=None):
